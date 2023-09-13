@@ -1,0 +1,180 @@
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #333;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 0 0 7px;
+    position: relative;
+    animation: move-up-down 2s linear infinite;
+}
+h1::before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 200px;
+    background-color: rgb(0, 183, 255);
+
+}
+h3::before {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 160px;
+    background-color: rgb(0, 183, 255);
+
+}
+@keyframes move-up-down {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -10px;
+    }
+    100% {
+        top:  0;
+    }
+}
+.all {
+    text-align: center;
+}
+.all a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    transition: .6s;
+    position: relative;
+
+}
+
+
+.all .FaceBook  {
+    background-color: #0084ff;
+    border-radius: 40px;
+    transition: .9s;
+}
+.all .Instagram {
+background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-radius: 40px;
+}
+.all .WhatsApp {
+    background-color: #25d366;
+    border-radius: 40px;
+}
+.all .GitHub {
+    background-color: #555;
+    border-radius: 40px;
+}
+.all .Projects {
+    background-color: #999;
+    border-radius: 40px;
+}
+.all a:hover {
+    transform: scale(1.04);
+    letter-spacing: 2px;
+}
+.all a i{
+    position: absolute;
+    left: 25px;
+}
+
+.phone-number {
+    text-align: center;
+    color: #999;
+    font-size: 18px;
+}
+.phone-number strong {
+    color: #d6d6d6;
+}
+h5 {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: #0084ff;
+}
+h6 {
+    font-size: 20px;
+    color: #0084ff;
+}
+button {
+    padding: 10px;
+    margin: 20px;
+    background-color: #0084ff;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 20px;
+    width: 60%;
+}
+button a {
+    color: white;
+}
+/* .foot p {
+    padding: 20px 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 200px;
+    background: #222;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 800;
+} */
